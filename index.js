@@ -13,7 +13,7 @@ module.exports = {
     "page:before": function(page) {
       if (this.output.name != 'website') return page;
 
-      if (page.path === 'tags.md') {
+      if (page.path === '0/tags.md') {
         for (var key in tags_map) {
           if (tags_map.hasOwnProperty(key)) {
             var tag_header = eol.concat('## ', key, eol);
