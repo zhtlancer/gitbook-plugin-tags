@@ -62,9 +62,9 @@ module.exports = {
       var tags_before_ = [];
       tags.forEach(function(e) {
         if (page.type === 'markdown') {
-          tags_before_.push('[' + e + ']' + '(' + '/tags.html#' + slug(e) + ')');
+          tags_before_.push('[' + e + ']' + '(' + '/0/tags.html#' + slug(e) + ')');
         } else {
-          tags_before_.push('link:/tags.html#' + slug(e) + '[' + e + ']');
+          tags_before_.push('link:/0/tags.html#' + slug(e) + '[' + e + ']');
         }
       })
       if (page.type === 'markdown') {
